@@ -121,6 +121,9 @@
                     {{-- <a href="" class="btn btn-primary"><i class="fas fa-plus"></i></a> --}}
                     </div>
                 </div>
+
+                @yield('main_content');
+
             </section>
         </div>
 
