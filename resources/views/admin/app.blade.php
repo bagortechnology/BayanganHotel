@@ -117,6 +117,9 @@
             <section class="section">
                 <div class="section-header">
                     <h1>Dashboard</h1>
+                    <div class="ml-auto">
+                        <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Button</a>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
