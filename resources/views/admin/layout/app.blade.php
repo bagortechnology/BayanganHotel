@@ -41,8 +41,7 @@
     </div>
 </div>
 
-<script src="{{ asset('dist/js/scripts.js') }}"></script>
-<script src="{{ asset('dist/js/custom.js') }}"></script>
+    @include('admin.layout.scripts_footer')
 
 </body>
 </html>
