@@ -5,7 +5,7 @@ use App\Http\Controllers\Admin\AdminHomeController;
 
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 /* Admin */
