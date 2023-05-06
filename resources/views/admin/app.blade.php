@@ -64,7 +64,7 @@
                             <a href="" target="_blank" class="btn btn-warning"><i class="fa fa-home" aria-hidden="true">Homepage</i></a>
                         </li>
                         <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="uploads/user.jpg" class="rounded-circle mr-1">
+                            <img alt="image" src="/resources/img/user.jpg" class="rounded-circle mr-1">
                             <div class="d-sm-none d-lg-inline-block">Blessed</div></a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <a href="profile.html" class="dropdown-item has-icon">
