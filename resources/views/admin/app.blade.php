@@ -83,7 +83,7 @@
         <div class="main-sidebar">
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="index.html">Admin Panel</a>
+                    <a href="index.html">Admin</a>
                 </div>
                 <div class="sidebar-brand sidebar-brand-sm">
                     <a href="index.html"></a>
