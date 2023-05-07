@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div>
-                                            <a href="login.html">
+                                            <a href="{{ route('admin_login') }}">
                                                 Back to login page
                                             </a>
                                         </div>
