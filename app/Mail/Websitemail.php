@@ -59,6 +59,6 @@ class Websitemail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->subject)->view('view.name')->with('body', $this->body);
+        return $this->subject($this->subject)->view('email.email')->with('body', $this->body);
     }
 }
