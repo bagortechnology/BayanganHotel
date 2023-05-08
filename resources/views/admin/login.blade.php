@@ -36,7 +36,7 @@
                                         <div class="text-danger">{{ $message }}</div>
                                         @enderror
                                         @if(session()->get('error'))
-                                        <div class="text-danger">{{ isset($message) ? $message : '' }}</div>
+                                        <div class="text-danger">{{ isset($message) ? $message : 'Email or password is not correct!' }}</div>
                                     @endif
                                     
                                     </div>
