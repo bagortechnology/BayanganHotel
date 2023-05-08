@@ -8,11 +8,11 @@
     </form>
     <ul class="navbar-nav navbar-right">
         <li class="nav-link">
-            <a href="" target="_blank" class="btn btn-warning">Front End</a>
+            <a href="" target="_blank" class="btn btn-warning">Visit Website</a>
         </li>
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             <img alt="image" src="{{ asset('uploads/user.jpg') }}" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Sidong</div></a>
+            <div class="d-sm-none d-lg-inline-block">jiaren</div></a>
             <div class="dropdown-menu dropdown-menu-right">
                 <a href="profile.html" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Edit Profile
