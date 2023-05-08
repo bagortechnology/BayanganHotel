@@ -30,7 +30,9 @@ class AdminLoginController extends Controller
             'password' => $request->password
         ];
 
-        Auth::guard('admin')->attempt($credential);
+        if(Auth::guard('admin')->attempt($credential)) {
+            return redirect()->route('admin_dashboard');
+        };
 
     }
 }
