@@ -29,5 +29,7 @@ class AdminLoginController extends Controller
             'email' =>  $request->email,
             'password' => $request->password
         ];
+
+        Auth::guard('admin')
     }
 }
