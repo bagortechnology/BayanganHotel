@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Validator;
 use App\Models\Admin;
 use App\Mail\Websitemail;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 
 class AdminLoginController extends Controller
 {
@@ -25,18 +25,20 @@ class AdminLoginController extends Controller
             'email' => 'required|email',
             'password' => 'required'
         ]);
-
+    
         $credential = [
             'email' =>  $request->email,
             'password' => $request->password
         ];
-
-        if (Auth::guard('admin')->attempt($credential)) {
-            return redirect()->route('admin_dashboard');
-        } else {
-            return redirect()->route('admin_login')->with('error', 'Information is not correct!');
+    
+        $admin = Admin::where('email', $request->email)->first();
+    
+        if ($admin && Hash::check($request->password, $admin->password)) {
+            if (Auth::guard('admin')->attempt($credential)) {
+                return redirect()->route('admin_dashboard');
+            }
         }
-        
-
+    
+        return redirect()->route('admin_login')->with('error', 'Email or password is not correct!');
     }
 }
