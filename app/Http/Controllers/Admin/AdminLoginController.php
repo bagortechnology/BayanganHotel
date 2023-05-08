@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Admin;
 use App\Mail\Websitemail;
 use Hash;
-use Auth;
 
 class AdminLoginController extends Controller
 {
@@ -30,6 +30,7 @@ class AdminLoginController extends Controller
             'password' => $request->password
         ];
 
-        Auth::guard('admin')
+        Auth::guard('admin')->attempt($credential);
+
     }
 }
