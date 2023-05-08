@@ -24,5 +24,10 @@ class AdminLoginController extends Controller
             'email' => 'required|email',
             'password' => 'required|password'
         ]);
+
+        $credential = [
+            'email' =>  $request->email,
+            'password' => $request->password,
+        ];
     }
 }
