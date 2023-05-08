@@ -27,7 +27,7 @@ class AdminLoginController extends Controller
 
         $credential = [
             'email' =>  $request->email,
-            'password' => $request->password,
+            'password' => $request->password
         ];
     }
 }
