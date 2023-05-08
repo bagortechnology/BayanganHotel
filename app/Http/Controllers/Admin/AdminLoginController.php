@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Validator;
 use App\Models\Admin;
 use App\Mail\Websitemail;
 use Hash;
@@ -22,7 +23,7 @@ class AdminLoginController extends Controller
     public function login_submit(Request $request) {
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required|password'
+            'password' => 'required'
         ]);
 
         $credential = [
@@ -30,11 +31,12 @@ class AdminLoginController extends Controller
             'password' => $request->password
         ];
 
-        if(Auth::guard('admin')->attempt($credential)) {
+        if (Auth::guard('admin')->attempt($credential)) {
             return redirect()->route('admin_dashboard');
         } else {
-            return redirect()->route('admin_login');
+            return redirect()->route('admin_login')->with('error', 'Information is not correct!');
         }
+        
 
     }
 }

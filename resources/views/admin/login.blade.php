@@ -34,7 +34,11 @@
                                         <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email Address" value="{{ old('email') }}" autofocus>
                                         @error('email') 
                                         <div class="text-danger">{{ $message }}</div>
-                                        @enderror 
+                                        @enderror
+                                        @if(session()->get('error'))
+                                        <div class="text-danger">{{ isset($message) ? $message : '' }}</div>
+                                    @endif
+                                    
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control @error('password') is-invalid @enderror" name="password"  placeholder="Password">

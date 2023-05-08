@@ -42,12 +42,13 @@ return [
         ],
     ],
 
-    'admin' => [
-        'web' => [
+    'guards' => [
+        'admin' => [
             'driver' => 'session',
-            'provider' => 'admins',
+            'provider' => 'admin',
         ],
     ],
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -76,12 +77,15 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+    ],
 
-        'admins' => [
+    'providers' => [
+        'admin' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ],
     ],
+    
 
     /*
     |--------------------------------------------------------------------------
