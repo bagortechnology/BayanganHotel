@@ -30,15 +30,17 @@
                             <div class="card-body card-body-auth">
                                 <form method="POST" action="{{ route('admin_login_submit') }}">
                                     @csrf
+
+                                    @if(session()->get('error'))
+                                      <div class="text-danger">{{ session()->get('error') }}</div>
+                                    @endif
+
+                                
                                     <div class="form-group">
                                         <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email Address" value="{{ old('email') }}" autofocus>
                                         @error('email') 
                                         <div class="text-danger">{{ $message }}</div>
                                         @enderror
-                                        {{-- @if(session()->get('error'))
-                                        <div class="text-danger">{{ isset($message) ? $message : 'Email or password is not correct!' }}</div>
-                                    @endif --}}
-                                    
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control @error('password') is-invalid @enderror" name="password"  placeholder="Password">
