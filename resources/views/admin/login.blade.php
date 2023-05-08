@@ -33,7 +33,7 @@
                                     <div class="form-group">
                                         <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email Address" value="{{ old('email') }}" autofocus>
                                         @error('email') 
-                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        <div class="text-danger">{{ $message }}</div>
                                         @enderror 
                                     </div>
                                     <div class="form-group">
