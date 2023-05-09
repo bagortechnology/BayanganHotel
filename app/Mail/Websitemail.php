@@ -13,52 +13,16 @@ class Websitemail extends Mailable
     use Queueable, SerializesModels;
     public $subject, $body;
     
-    /**
-     * Create a new message instance.
-     */
     public function __construct($subject, $body)
     {
         $this->subject = $subject;
         $this->body = $body;
     }
 
-    /**
-     * Get the message envelope.
-     */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Websitemail',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-     */
-    public function attachments(): array
-    {
-        return [];
-    }
-
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {
-        return $this->subject($this->subject)->view('email.email')->with('body', $this->body);
+        return $this->view('email.email')->with([
+            'subject' => $this->subject
+        ]);
     }
 }
