@@ -4,11 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminProfileController;
+use App\Http\Controllers\Front\HomeController;
 
-/* Frontend Page */
-Route::get('/', function () {
-    return view('welcome');
-});
+/* Front */
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 /* Admin Home */
 Route::get('admin/home', [AdminHomeController::class, 'index'])->name('admin_home')
