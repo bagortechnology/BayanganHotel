@@ -6,7 +6,7 @@
         <div class="item" style="background-image:url(uploads/bayangan-blue-water-pool.jpg);">
             <div class="bg"></div>
             <div class="text">
-                <h2>Best Hotel in the Labason!</h2>
+                <h2>Best Hotel in Labason!</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt libero voluptate, veritatis esse dolorem soluta.
                 </p>
