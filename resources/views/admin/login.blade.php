@@ -6,7 +6,7 @@
 
     <link rel="icon" type="image/png" href="{{ asset('uploads/favicon.ico') }}">
 
-    <title>Admin Login</title>
+    <title>Admin</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -25,7 +25,7 @@
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                         <div class="card card-primary border-box">
                             <div class="card-header card-header-auth">
-                                <h4 class="text-center">Admin Login</h4>
+                                <h4 class="text-center">Admin Access</h4>
                             </div>
                             <div class="card-body card-body-auth">
                                 <form method="POST" action="{{ route('admin_login_submit') }}">
