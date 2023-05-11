@@ -6,25 +6,19 @@
         <div class="item" style="background-image:url(uploads/bayangan-blue-water-pool.jpg);">
             <div class="bg"></div>
             <div class="text">
-                <h2>Best Hotel in Labason!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt libero voluptate, veritatis esse dolorem soluta.
+                <h2>BAYANGAN HOTEL & BEACH RESORT</h2>
+                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    A sanctuary of serenity and rejuvenation amidst the captivating beauty of nature.
                 </p>
-                <div class="button">
-                    <a href="">Read More</a>
-                </div>
             </div>
         </div>
         <div class="item" style="background-image:url(uploads/bayangan-island.jpg);">
             <div class="bg"></div>
             <div class="text">
                 <h2>Explore Bayangan Island</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt libero voluptate, veritatis esse dolorem soluta.
+                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    Experience pure bliss on Bayangan Island's pristine white sandy beach, where the turquoise waters and paradise-like shoreline create an irresistible haven.
                 </p>
-                <div class="button">
-                    <a href="">Read More</a>
-                </div>
             </div>
         </div>
     </div>
@@ -55,12 +49,12 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="form-group">
-                        <input type="number" name="" class="form-control" min="1" max="30" placeholder="Adults">
+                        <input type="number" name="" class="form-control" min="1" max="300" placeholder="Adults">
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="form-group">
-                        <input type="number" name="" class="form-control" min="1" max="30" placeholder="Children">
+                        <input type="number" name="" class="form-control" min="0" max="300" placeholder="Children">
                     </div>
                 </div>
                 <div class="col-lg-2">
@@ -74,7 +68,7 @@
 
 
 
-<div class="home-feature">
+{{-- <div class="home-feature">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -167,11 +161,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 
-<div class="home-rooms">
+{{-- <div class="home-rooms">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -432,6 +426,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 @endsection

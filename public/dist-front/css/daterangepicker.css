@@ -208,8 +208,14 @@
   border-radius: 4px;
 }
 
-.daterangepicker td.active, .daterangepicker td.active:hover {
-  background-color: #357ebd;
+.daterangepicker td.active{
+  background-color: #1A5F7A;
+  border-color: transparent;
+  color: #fff;
+}
+
+.daterangepicker td.active:hover {
+  background-color: #E38B29;
   border-color: transparent;
   color: #fff;
 }
@@ -330,7 +336,7 @@
 }
 
 .daterangepicker .ranges li.active {
-  background-color: #08c;
+  background-color: rgb(248, 102, 48);
   color: #fff;
 }
 
@@ -407,4 +413,15 @@
   .daterangepicker .drp-calendar.left {
     clear: none !important;
   }
+}
+
+.applyBtn {
+  background-color: #E38B29;
+  border-color: #E38B29;
+}
+
+.applyBtn:hover{
+  background-color: #1A5F7A;
+  border-color: #1A5F7A;
+
 }

@@ -1,4 +1,4 @@
-<div class="footer">
+{{-- <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -82,10 +82,10 @@
 
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="copyright">
-    Copyright 2023 Group 1. All Rights Reserved.
+    Copyright 2023 Bayangan Hotel & Beach Resort. All Rights Reserved.
 </div>
 
 <div class="scroll-top">

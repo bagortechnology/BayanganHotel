@@ -1,3 +1,4 @@
+<div class="sticky-top">
 <div class="navbar-area" id="stickymenu">
 
     <!-- Menu For Mobile Device -->
@@ -23,22 +24,25 @@
                             <a href="{{ route('about') }}" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void;" class="nav-link dropdown-toggle">Room & Suite</a>
+                            <a href="javascript:void;" class="nav-link dropdown-toggle">Resort Amenities</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="room-detail.html" class="nav-link">Regular Couple Bed</a>
+                                    <a href="room-detail.html" class="nav-link">Resort Rooms</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="room-detail.html" class="nav-link">Delux Couple Bed</a>
+                                    <a href="room-detail.html" class="nav-link">Hotel Rooms</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="room-detail.html" class="nav-link">Regular Double Bed</a>
+                                    <a href="room-detail.html" class="nav-link">Arcadia Villa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="room-detail.html" class="nav-link">Delux Double Bed</a>
+                                    <a href="room-detail.html" class="nav-link">Blue Water Room</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="room-detail.html" class="nav-link">Premium Suite</a>
+                                    <a href="room-detail.html" class="nav-link">Estrella Hall</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="room-detail.html" class="nav-link">Hotel Function Hall</a>
                                 </li>
                             </ul>
                         </li>
@@ -64,4 +68,6 @@
             </nav>
         </div>
     </div>
+</div>
+
 </div>
