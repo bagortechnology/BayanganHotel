@@ -10,31 +10,31 @@
         <link rel="icon" type="image/png" href="{{ asset('uploads/favicon.ico') }}">
 
         <!-- All CSS -->
-        @includes('front.layout.styles')
+        @include('front.layout.styles')
         
         <!-- All Javascripts -->
-        @includes('front.layout.scripts')
+        @include('front.layout.scripts')
 
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap" rel="stylesheet">
         
         <!-- Google Analytics -->
-        @includes('front.layout.ga4')
+        @include('front.layout.ga4')
 
     </head>
     <body>
         
-        @includes('front.layout.top_bar')
+        @include('front.layout.top_bar')
 
 
-        @includes('front.layout.nav')
+        @include('front.layout.nav')
 
 
         @yield('main_content')
 
 
-        @includes('front.layout.footer')
+        @include('front.layout.footer')
 		
-        @includes('front.layout.scripts_footer')       
+        @include('front.layout.scripts_footer')       
 		
    </body>
 </html>
