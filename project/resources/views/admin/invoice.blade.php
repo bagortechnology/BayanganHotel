@@ -71,7 +71,7 @@
                                     $diff = ($t2-$t1)/60/60/24;
                                     $sub = $room_data->price*$diff;
                                     @endphp
-                                    ${{ $sub }}
+                                    ₱{{ $sub }}
                                 </td>
                             </tr>
                             @php
