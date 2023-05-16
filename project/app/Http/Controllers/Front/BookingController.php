@@ -369,7 +369,7 @@ class BookingController extends Controller
         Stripe\Stripe::setApiKey($stripe_secret_key);
         $response = Stripe\Charge::create ([
             "amount" => $cents,
-            "currency" => "php",
+            "currency" => "PHP",
             "source" => $request->stripeToken,
             "description" => env('APP_NAME')
         ]);
