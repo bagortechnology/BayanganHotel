@@ -232,8 +232,9 @@
                             asperiores, delectus accusamus aut esse consectetur nisi, debitis quibusdam,
                             laborum unde atque excepturi maxime. Laboriosam, illum quia culpa quasi
                             doloremque iusto aperiam placeat omnis, obcaecati quae, fuga labore rem veniam?</p>
+                            <button class="btn btn__explore rounded-0 " style="background-color: #E38B29">Explore</button>
                     </div>
-                    <button class="btn btn__explore rounded-0 w-50" style="background-color: #E38B29">Explore</button>
+                    
                 </div>
             </div>
         </section>
