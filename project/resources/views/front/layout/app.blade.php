@@ -234,7 +234,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item  container-fluid">
-                            <h2 class="heading">Useful Links</h2>
+                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Useful Links</h2>
                             <ul class="useful-links">
                                 <li><a href="{{ route('home') }}">Home</a></li>
 
@@ -256,7 +256,7 @@
                     
                     <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item  container-fluid">
-                            <h2 class="heading">Contact</h2>
+                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Contact</h2>
                             <div class="list-item">
                                 <div class="left">
                                     <i class="fa fa-map-marker"></i>
@@ -305,7 +305,7 @@
 
                     <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item container-fluid">
-                            <h2 class="heading">Newsletter</h2>
+                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Newsletter</h2>
                             <p>
                                 In order to get the latest news and other great items, please subscribe us here: 
                             </p>
