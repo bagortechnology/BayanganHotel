@@ -318,6 +318,11 @@
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29">
                                 </div>
+                                <div class="mt-4">
+                                    <p>*By subscribing, you agree to receive marketing email messages from 
+                                        Bayangan Hotel and Beach Resort at the email address provided. Unsubscribe
+                                         at any time. View our Privacy Policy and Terms of Services</p>
+                                </div>
                             </form>
                         </div>
                     </div>
