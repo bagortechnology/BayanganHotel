@@ -232,7 +232,7 @@
                             asperiores, delectus accusamus aut esse consectetur nisi, debitis quibusdam,
                             laborum unde atque excepturi maxime. Laboriosam, illum quia culpa quasi
                             doloremque iusto aperiam placeat omnis, obcaecati quae, fuga labore rem veniam?</p>
-                            <button class="btn btn__explore rounded-0 " style="background-color: #E38B29">Explore</button>
+                            <button class="btn btn__explore rounded-0 text-white" style="background-color: #E38B29">Explore</button>
                     </div>
                     
                 </div>
@@ -248,7 +248,7 @@
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <div class="title" style="letter-spacing:0.15em; font-size:20px">GALLERY</div>
                             <h1>Catch a Glimpse</h1>
-                            <button class="btn btn__seemore rounded-0">SEE MORE</button>
+                            <button class="btn btn__seemore rounded-0 text-white" style="background-color: #E38B29">SEE MORE</button>
                         </div>
                     </div>
                     <div class="col-6 col-md overflow-hidden p-0 ">
