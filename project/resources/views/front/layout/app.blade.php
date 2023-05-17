@@ -221,34 +221,19 @@
         @yield('main_content')
 
 
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="item">
-                            <h2 class="heading">Site Links</h2>
-                            <ul class="useful-links">
+        <footer>
 
-                                @if($global_page_data->photo_gallery_status == 1)
-                                <li><a href="{{ route('photo_gallery') }}">{{ $global_page_data->photo_gallery_heading }}</a></li>
-                                @endif
-
-                                @if($global_page_data->video_gallery_status == 1)
-                                <li><a href="{{ route('video_gallery') }}">{{ $global_page_data->video_gallery_heading }}</a></li>
-                                @endif
-
-                                @if($global_page_data->blog_status == 1)
-                                <li><a href="{{ route('blog') }}">{{ $global_page_data->blog_heading }}</a></li>
-                                @endif
-
-                                @if($global_page_data->contact_status == 1)
-                                <li><a href="{{ route('contact') }}">{{ $global_page_data->contact_heading }}</a></li>
-                                @endif
-                            </ul>
+            <div class="footer py-0">
+            <div class="position-relative overflow-hidden">
+                <div class="row" style="">
+                    <div class="col-md-6 col-lg-3 py-5 d-flex justify-content-center align-items-center">
+                        <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
+                            <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="200px" height="230px">
+                            <p>Bayangan Hotel and Beach Resort</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-6 col-lg-3 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
+                        <div class="item  container-fluid">
                             <h2 class="heading">Useful Links</h2>
                             <ul class="useful-links">
                                 <li><a href="{{ route('home') }}">Home</a></li>
@@ -269,8 +254,8 @@
                     </div>
                     
                     
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
+                        <div class="item  container-fluid">
                             <h2 class="heading">Contact</h2>
                             <div class="list-item">
                                 <div class="left">
@@ -318,8 +303,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
+                        <div class="item container-fluid">
                             <h2 class="heading">Newsletter</h2>
                             <p>
                                 In order to get the latest news and other great items, please subscribe us here: 
@@ -331,7 +316,7 @@
                                     <span class="text-danger error-text email_error"></span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" value="Subscribe Now">
+                                    <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29">
                                 </div>
                             </form>
                         </div>
@@ -340,6 +325,7 @@
                 </div>
             </div>
         </div>
+</footer>
 
         <div class="copyright">
             {{ $global_setting_data->copyright }}
