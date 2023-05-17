@@ -216,14 +216,14 @@
                 <div class="overlay d-flex flex-column justify-content-center text-center align-items-center gap-4">
                     <h1 class="text-white">Weddings</h1>
                     <p class="w-75" style="color:white">Plan a sophisticated and memorable weddings both indoors and outdoors, offering spectacular views of the ocean, beaches, and landscapes of Labason, Zamboanga del Norte. Bayanagan Hotel and Beach Resort is a one-of-a-kind destination for your special day.</p>
-                    <button class="btn view_details rounded-0">VIEW DETAILS</button>
+                    <button class="btn view_details rounded-0 text-white" style="background-color: #E38B29">VIEW DETAILS</button>
                 </div>
             </div>
             <div class="col right_content">
                 <div class="overlay d-flex flex-column justify-content-center text-center align-items-center gap-4">
                     <h1>Events</h1>
                     <p class="w-75">Ideal for your groups and events, Bayangan Hotel and Beach Resort features a professional function room with ocean views and has a beautiful patio on the beach.</p>
-                    <button class="btn view_details rounded-0">VIEW DETAILS</button>
+                    <button class="btn view_details rounded-0 text-white" style="background-color: #E38B29">VIEW DETAILS</button>
                 </div>
             </div>
         </div>
