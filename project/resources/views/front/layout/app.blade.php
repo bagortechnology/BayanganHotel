@@ -221,6 +221,28 @@
         @yield('main_content')
 
 
+        <div class="overflow-hidden">
+                <div class="row d-flex flex-wrap gallery__content">
+                    <div class="col-6 col-md overflow-hidden p-0 ">
+                        <img src="./uploads/hero_sec.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="col-6 col-md overflow-hidden d-flex justify-content-center align-items-center p-0 2nd_col" style="background-color: #FEFAE0; color:#1A5F7A">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="title" style="letter-spacing:0.15em; font-size:20px">GALLERY</div>
+                            <h1>Catch a Glimpse</h1>
+                            <button class="btn btn__seemore rounded-0">SEE MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md overflow-hidden p-0 ">
+                        <img src="./uploads/diving.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="col-6 col-md overflow-hidden p-0 ">
+                        <img src="./uploads/dishImg.jpg" alt="" class="w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
 
             <div class="footer py-0">
@@ -228,8 +250,8 @@
                 <div class="row" style="">
                     <div class="col-md-6 col-lg-3 py-5 d-flex justify-content-center align-items-center">
                         <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
-                            <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="200px" height="230px">
-                            <p>Bayangan Hotel and Beach Resort</p>
+                            <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="150px" height="180px">
+                            <h2 class="text-center">Bayangan Hotel and Beach Resort</h2>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
