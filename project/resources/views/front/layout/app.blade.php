@@ -136,12 +136,12 @@
         </div>
 
 
-        <div class="navbar-area" id="stickymenu">
+        <div class="navbar-area sticky-top" id="stickymenu">
 
             <!-- Menu For Mobile Device -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="{{ asset('uploads/'.$global_setting_data->logo) }}" alt="logo">
+                <a href="{{ route('home') }}" class="logo">
+                    <img src="{{ asset('uploads/'.$global_setting_data->favicon) }}" alt="logo">
                 </a>
             </div>
         
@@ -216,6 +216,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         
         @yield('main_content')
