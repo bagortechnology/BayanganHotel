@@ -280,8 +280,9 @@ sup{
 	height: 40px;
 }
 .mean-container .mean-bar {
-	background-color: #fff;
+	background-color: #FEFAE0;
 	height: 60px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .mean-container .logo {
 	top: 5px;
@@ -423,7 +424,7 @@ sup{
 	background: #f0f0f0;
 }
 .search-section .inner {
-	background: #fff;
+	background: #FEFAE0;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 	border-radius: 8px;
 	padding: 40px 20px;
@@ -435,6 +436,9 @@ sup{
 .search-section .form-select {
 	font-size: 16px;
 	font-weight: 600;
+	background: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-color: white;
 }
 .search-section button[type="submit"] {
 	width: 100%;
@@ -446,14 +450,8 @@ sup{
 	border-radius: 8px;
 }
 .search-section button[type="submit"]:hover {
-	width: 100%;
-	font-size: 16px;
-	background: #E38B29;
-	border: 1px solid #E38B29;
-	color: white;
-	font-weight: 600;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	border-radius: 8px;
+	background: #E38B29 !important;
+	border: 1px solid #E38B29 !important;
 }
 
 
