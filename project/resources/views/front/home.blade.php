@@ -170,7 +170,7 @@
 @endif
 
 
-<section class="rooms">
+<section class="rooms" style="background: linear-gradient(to right,#FEFAE0,transparent),url('./uploads/DR_2.jpg');">
     <div class="container">
         <div class="rooms-content d-flex flex-column justify-content-center gap-4">
             <div class="title col-lg-3" style="border-left: 6px solid #E38B29; padding-left: .6rem; color:#1A5F7A">
