@@ -6,7 +6,7 @@
 
     <link rel="icon" type="image/png" href="{{ asset('uploads/'.$global_setting_data->favicon) }}">
 
-    <title>Admin Panel</title>
+    <title>Bayangan Resort</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
