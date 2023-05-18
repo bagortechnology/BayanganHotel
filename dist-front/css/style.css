@@ -213,7 +213,7 @@ sup{
 	padding-top: 0;
 	padding-bottom: 0;
 	background: #FEFAE0;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .main-nav .navbar {
 	padding-left: 0;
@@ -282,7 +282,7 @@ sup{
 .mean-container .mean-bar {
 	background-color: #FEFAE0;
 	height: 60px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .mean-container .logo {
 	top: 5px;
@@ -384,7 +384,7 @@ sup{
     padding: 14px 45px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
 }
 .slide-carousel.owl-carousel .owl-nav .owl-prev,
 .slide-carousel.owl-carousel .owl-nav .owl-next {
@@ -425,7 +425,7 @@ sup{
 }
 .search-section .inner {
 	background: #FEFAE0;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	border-radius: 8px;
 	padding: 40px 20px;
 	margin-top: -70px;
@@ -446,8 +446,8 @@ sup{
 	background: #1A5F7A;
 	border: 1px solid #1A5F7A;
 	font-weight: 600;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	border-radius: 5px;
 }
 .search-section button[type="submit"]:hover {
 	background: #E38B29 !important;

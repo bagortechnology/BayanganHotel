@@ -56,14 +56,13 @@
                 background-color: {{ $global_setting_data->theme_color_1 }};
             }
 
-            .slider .text .button a,
+            .slider .text .button a:hover,
             .search-section button[type="submit"],
             .home-rooms .big-button a,
             .bg-website {
                 background-color: {{ $global_setting_data->theme_color_1 }}!important;
             }
 
-            .slider .text .button a,
             .slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
             .slide-carousel.owl-carousel .owl-nav .owl-next:hover,
             .search-section button[type="submit"],
@@ -74,6 +73,7 @@
             }
 
             .home-feature .inner .icon i,
+            .slider .text .button a,
             .home-rooms .inner .text .button a,
             .blog-item .inner .text .button a,
             .room-detail .amenity .item,
