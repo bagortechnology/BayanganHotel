@@ -14,4 +14,4 @@
 <script src="{{ asset('dist-front/js/sticky_sidebar.js') }}"></script>
 <script src="{{ asset('dist-front/js/jquery.meanmenu.js') }}"></script>
 <script src="{{ asset('dist-front/js/iziToast.min.js') }}"></script>
-<script src="{{ asset('dist-front/js/boxicon.js') }}"></script>
+<script src="{{ asset('dist-front/js/boxicons.js') }}"></script>
