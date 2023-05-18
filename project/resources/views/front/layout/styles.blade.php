@@ -14,3 +14,4 @@
 <link rel="stylesheet" href="{{ asset('dist-front/css/iziToast.min.css') }}">
 <link rel="stylesheet" href="{{ asset('dist-front/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('dist-front/css/location.css') }}">
+<link rel="stylesheet" href="{{ asset('dist-front/css/room.css') }}">
