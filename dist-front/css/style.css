@@ -511,24 +511,26 @@ sup{
 
 /* Home Page - Rooms */
 .home-rooms {
-	margin-top: 40px;
+	padding-top: 40px;
+	background: #1A5F7A;
 }
 .home-rooms h2.main-header {
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: 900 !important;
 	margin-bottom: 20px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #1A5F7A;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1) !important;
+	color: white;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
+
+
 .home-rooms .inner {
 	margin-bottom: 40px;
+	background: white;
 	padding: 30px;
 	border-radius: 15px;
-	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 4px 10px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
 }
 
 .home-rooms .inner:hover{
@@ -562,6 +564,7 @@ sup{
 }
 .home-rooms .big-button {
 	text-align: center;
+	padding-bottom: 50px;
 }
 .home-rooms .big-button a {
 	font-size: 16px;
@@ -956,7 +959,6 @@ sup{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: relative;
-	margin-top: 50px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }

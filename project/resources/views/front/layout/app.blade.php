@@ -58,7 +58,6 @@
 
             .slider .text .button a:hover,
             .search-section button[type="submit"],
-            .home-rooms .big-button a,
             .bg-website {
                 background-color: {{ $global_setting_data->theme_color_1 }}!important;
             }
@@ -66,7 +65,6 @@
             .slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
             .slide-carousel.owl-carousel .owl-nav .owl-next:hover,
             .search-section button[type="submit"],
-            .home-rooms .big-button a,
             .room-detail-carousel.owl-carousel .owl-nav .owl-prev:hover, 
             .room-detail-carousel.owl-carousel .owl-nav .owl-next:hover,
             .room-detail .amenity .item {
@@ -77,7 +75,7 @@
             .slider .text .button a,
             .home-rooms .inner .text .button a,
             .blog-item .inner .text .button a,
-            .home-rooms .big-button a:hover,
+            .home-rooms .big-button a,
             .room-detail .amenity .item,
             .cart .table-cart tr th {
                 background-color: {{ $global_setting_data->theme_color_2 }}!important;
@@ -89,7 +87,7 @@
                 color: {{ $global_setting_data->theme_color_2 }};
             }
 
-            .home-rooms .big-button a:hover {
+            .home-rooms .big-button a {
                 border-color: {{ $global_setting_data->theme_color_2 }} !important;
             }
         </style>
