@@ -115,7 +115,7 @@
                             ₱{{ $item->price }}/day
                         </div>
                         <div class="button">
-                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary">See Detail</a>
+                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white">See Detail</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                             </p>
                         </div>
                         <div class="button">
-                            <a href="{{ route('post',$item->id) }}" class="btn btn-primary">Read More</a>
+                            <a href="{{ route('post',$item->id) }}" class="btn btn-primary text-white">Read More</a>
                         </div>
                     </div>
                 </div>
