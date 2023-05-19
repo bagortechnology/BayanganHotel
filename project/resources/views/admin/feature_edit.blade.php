@@ -19,7 +19,7 @@
                                 <div class="mb-4">
                                     <label class="form-label">Existing Icon</label>
                                     <div>
-                                        <i class="{{ $feature_data->icon }} fz_40"></i>
+                                        <i class='{{ $feature_data->icon }}'></i>
                                     </div>
                                 </div>
                                 <div class="mb-4">

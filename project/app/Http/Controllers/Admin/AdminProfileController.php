@@ -44,7 +44,7 @@ class AdminProfileController extends Controller
 
         if($request->hasFile('photo')) {
             $request->validate([
-                'photo' => 'image|mimes:jpg,jpeg,png,gif'
+                'photo' => 'image|mimes:jpg,jpeg,png,gif,svg'
             ]);
 
             unlink('uploads/'.$admin_data->photo);

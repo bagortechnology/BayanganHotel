@@ -69,6 +69,11 @@ a {
   -webkit-transition: all .5s;
   -o-transition: all .5s; }
 
+a:hover {
+  color: #E38B29;
+  text-decoration: none;
+}
+
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion,
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas,
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far,

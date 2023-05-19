@@ -56,14 +56,12 @@
                 background-color: {{ $global_setting_data->theme_color_1 }};
             }
 
-            .slider .text .button a,
+            .slider .text .button a:hover,
             .search-section button[type="submit"],
-            .home-rooms .big-button a,
             .bg-website {
                 background-color: {{ $global_setting_data->theme_color_1 }}!important;
             }
 
-            .slider .text .button a,
             .slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
             .slide-carousel.owl-carousel .owl-nav .owl-next:hover,
             .search-section button[type="submit"],
@@ -74,11 +72,23 @@
             }
 
             .home-feature .inner .icon i,
+            .slider .text .button a,
             .home-rooms .inner .text .button a,
             .blog-item .inner .text .button a,
+            .home-rooms .big-button a,
             .room-detail .amenity .item,
             .cart .table-cart tr th {
                 background-color: {{ $global_setting_data->theme_color_2 }}!important;
+            }
+
+            .home-rooms .inner .text .button a:hover,
+            .blog-item .inner .text .button a:hover {
+                background-color: {{ $global_setting_data->theme_color_1 }}!important;
+                color: {{ $global_setting_data->theme_color_2 }};
+            }
+
+            .home-rooms .big-button a {
+                border-color: {{ $global_setting_data->theme_color_2 }} !important;
             }
         </style>
 
@@ -136,12 +146,12 @@
         </div>
 
 
-        <div class="navbar-area" id="stickymenu">
+        <div class="navbar-area sticky-top" id="stickymenu">
 
             <!-- Menu For Mobile Device -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="{{ asset('uploads/'.$global_setting_data->logo) }}" alt="logo">
+                <a href="{{ route('home') }}" class="logo">
+                    <img src="{{ asset('uploads/'.$global_setting_data->favicon) }}" alt="logo">
                 </a>
             </div>
         
@@ -216,6 +226,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         
         @yield('main_content')

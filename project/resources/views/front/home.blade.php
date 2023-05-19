@@ -73,7 +73,7 @@
             @foreach($feature_all as $item)
             <div class="col-md-3">
                 <div class="inner">
-                    <div class="icon"><i class="{{ $item->icon }}"></i></div>
+                    <div class="icon"><i class = '{{ $item->icon }}'></i></div>
                     <div class="text">
                         <h2>{{ $item->heading }}</h2>
                         <p>
@@ -107,7 +107,7 @@
             <div class="col-md-3">
                 <div class="inner">
                     <div class="photo">
-                        <img src="{{ asset('uploads/'.$item->featured_photo) }}" alt="">
+                        <img src="{{ asset('uploads/'.$item->featured_photo) }}" alt="resort featured image" class="img-fluid rounded-top-2">
                     </div>
                     <div class="text">
                         <h2><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
@@ -115,7 +115,11 @@
                             ₱{{ $item->price }}/day
                         </div>
                         <div class="button">
+<<<<<<< HEAD
                             <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white">See Detail</a>
+=======
+                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary py-2">View Details</a>
+>>>>>>> ccfbe159d0a6cfa194f8f4a49bd8e08383ea1647
                         </div>
                     </div>
                 </div>
@@ -135,9 +139,9 @@
 
 
 @if($global_setting_data->home_testimonial_status == 'Show')
-<div class="testimonial" style="background-image: url(uploads/slide3.jpg)">
+<div class="testimonial" style="background-image: url(uploads/happy-customers.jpg)">
     <div class="bg"></div>
-    <div class="container">
+    <div class="container"></div>
         <div class="row">
             <div class="col-md-12">
                 <h2 class="main-header">Our Happy Clients</h2>
@@ -149,7 +153,7 @@
                     @foreach($testimonial_all as $item)
                     <div class="item">
                         <div class="photo">
-                            <img src="{{ asset('uploads/'.$item->photo) }}" alt="user photo">
+                            <img src="{{ asset('uploads/'.$item->photo) }}" alt="user photo" class="img-fluid rounded-circle">
                         </div>
                         <div class="text">
                             <h4>{{ $item->name }}</h4>
@@ -209,7 +213,7 @@
             <div class="col-md-4">
                 <div class="inner">
                     <div class="photo">
-                        <img src="{{ asset('uploads/'.$item->photo) }}" alt="">
+                        <img src="{{ asset('uploads/'.$item->photo) }}" alt="blog featured image" class="img-fluid rounded">
                     </div>
                     <div class="text">
                         <h2><a href="{{ route('post',$item->id) }}">{{ $item->heading }}</a></h2>
@@ -306,4 +310,6 @@
         </script>
     @endforeach
 @endif
+
+
 @endsection
