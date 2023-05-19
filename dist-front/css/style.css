@@ -213,7 +213,7 @@ sup{
 	padding-top: 0;
 	padding-bottom: 0;
 	background: #FEFAE0;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .main-nav .navbar {
 	padding-left: 0;
@@ -448,9 +448,8 @@ sup{
 	width: 100%;
 	font-size: 16px;
 	background: #1A5F7A;
-	border: 1px solid #1A5F7A;
 	font-weight: 600;
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
 	border-radius: 5px;
 }
 .search-section button[type="submit"]:hover {
@@ -527,6 +526,13 @@ sup{
 }
 .home-rooms .inner {
 	margin-bottom: 40px;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.home-rooms .inner:hover{
+	background-color: #FEFAE0;
 }
 .home-rooms .inner .photo {
 	margin-bottom: 10px;
@@ -548,23 +554,22 @@ sup{
 	font-weight: 700;
 }
 .home-rooms .inner .text .button a {
-	background: #ffe7e2;
-	color: #E38B29;
 	border: 0;
 	font-size: 16px;
 	width: 100%;
 	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .home-rooms .big-button {
 	text-align: center;
 }
 .home-rooms .big-button a {
-	background: #E38B29;
-	color: #fff !important;
-	padding: 10px 25px;
+	font-size: 16px;
+	padding: 15px;
+	font-weight: 600;
 	text-transform: uppercase;
-	border: 0;
-	font-weight: 700;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+	border-radius: 5px;
 }
 
 
@@ -604,12 +609,11 @@ sup{
 	font-size: 14px;
 }
 .blog-item .inner .text .button a {
-	background: #ffe7e2;
-	color: #E38B29;
 	border: 0;
 	font-size: 16px;
 	width: 100%;
 	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 
 
@@ -967,7 +971,7 @@ sup{
 	opacity: 0.7;
 }
 .testimonial h2.main-header {
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-align: center;
@@ -1057,7 +1061,7 @@ sup{
 .testimonial-carousel .owl-dots .owl-dot.active {
 	width: 24px;
 	height: 24px;
-	background: #313131;
+	background: #E38B29;
 	border: 7px solid #fff;
 }
 .testimonial-carousel .owl-nav .owl-prev,
