@@ -96,7 +96,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="main-header lead">Rooms and Suites</h2>
+                <h2 class="main-header">Rooms and Suites</h2>
             </div>
         </div>
         <div class="row">
@@ -149,7 +149,7 @@
                     @foreach($testimonial_all as $item)
                     <div class="item">
                         <div class="photo">
-                            <img src="{{ asset('uploads/'.$item->photo) }}" alt="user photo">
+                            <img src="{{ asset('uploads/'.$item->photo) }}" alt="user photo" class="img-fluid rounded-circle">
                         </div>
                         <div class="text">
                             <h4>{{ $item->name }}</h4>
