@@ -96,7 +96,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="main-header">Rooms and Suites</h2>
+                <h2 class="main-header lead">Rooms and Suites</h2>
             </div>
         </div>
         <div class="row">
@@ -135,9 +135,9 @@
 
 
 @if($global_setting_data->home_testimonial_status == 'Show')
-<div class="testimonial" style="background-image: url(uploads/slide3.jpg)">
+<div class="testimonial" style="background-image: url(uploads/happy-customers.jpg)">
     <div class="bg"></div>
-    <div class="container">
+    <div class="container"></div>
         <div class="row">
             <div class="col-md-12">
                 <h2 class="main-header">Our Happy Clients</h2>
