@@ -208,6 +208,10 @@ sup{
 
 /* Heading Area */
 
+.navbar-area .sticky-top {
+	z-index: 999;
+}
+
 .main-nav {
 	position: relative;
 	padding-top: 0;
@@ -434,7 +438,7 @@ sup{
 	padding: 40px 20px;
 	margin-top: -70px;
 	position: relative;
-	z-index: 99999;
+	z-index: 99;
 }
 .search-section .form-control,
 .search-section .form-select {
