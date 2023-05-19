@@ -115,11 +115,7 @@
                             ₱{{ $item->price }}/day
                         </div>
                         <div class="button">
-<<<<<<< HEAD
                             <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white">See Detail</a>
-=======
-                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary py-2">View Details</a>
->>>>>>> ccfbe159d0a6cfa194f8f4a49bd8e08383ea1647
                         </div>
                     </div>
                 </div>
