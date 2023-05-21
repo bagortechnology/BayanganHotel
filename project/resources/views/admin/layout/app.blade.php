@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     
     <link rel="shortcut icon" href="{{ asset('uploads/favicon.png') }}" type="image/x-icon">
-    <title>Admin | @yield('heading')</title>
+    <title>Admin Dashboard</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
