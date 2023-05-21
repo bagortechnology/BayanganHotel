@@ -1673,6 +1673,13 @@ h6 .badge {
         width: 22px;
         background-size: cover; }
 
+  /* Styles for tablet and mobile */
+  @media (max-width: 991px) {
+      .navbar-nav.navbar-right.btn-block {
+          display: none;
+      }
+  }
+
 .remove-caret:after {
   display: none; }
 
