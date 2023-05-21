@@ -1,7 +1,7 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('admin_home') }}">Admin | @yield('heading')</a> 
+            <a href="{{ route('admin_home') }}">Hotel Admin</a> 
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('admin_home') }}"></a>
