@@ -41,6 +41,7 @@ use App\Http\Controllers\Customer\CustomerOrderController;
 
 
 /* Front */
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
