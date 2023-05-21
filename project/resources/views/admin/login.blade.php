@@ -26,7 +26,7 @@
                         <div class="card card-primary border-box">
                             <div class="card-header card-header-auth text-center">
                                 <a class="" href="{{ route('home') }}">
-                                    <img src="{{ asset('uploads/'.$global_setting_data->logo) }}" alt="logo" id="header-logo-img" style="height: 80px; width:80px">
+                                    <img src="{{ asset('uploads/'.$global_setting_data->favicon) }}" alt="logo" id="header-logo-img" style="height: 80px; width:80px">
                                 </a>
                                 <h4 class="text-center">Admin Access</h4>
                             </div>
