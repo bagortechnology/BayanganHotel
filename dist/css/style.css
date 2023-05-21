@@ -2539,10 +2539,13 @@ body.sidebar-mini .main-sidebar {
       font-size: 0;
       height: 2px; }
     body.sidebar-mini .main-sidebar .sidebar-menu > li > a {
-      border-radius: 3px;
+      border-radius: 5px;
       height: 45px;
-      padding: 0;
-      justify-content: center; }
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
       body.sidebar-mini .main-sidebar .sidebar-menu > li > a .ion, body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fas, body.sidebar-mini .main-sidebar .sidebar-menu > li > a .far, body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fab, body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fal {
         margin: 0;
         font-size: 20px; }
@@ -2556,10 +2559,15 @@ body.sidebar-mini .main-sidebar {
         font-size: 10px; }
       body.sidebar-mini .main-sidebar .sidebar-menu > li > a.has-dropdown:after {
         content: initial; }
-    body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
-      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-      background-color: #1A5F7A;
-      color: #fff; }
+        body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          background-color: #E38B29;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
     body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu {
       position: absolute;
       background-color: #fff;
@@ -2577,7 +2585,7 @@ body.sidebar-mini .main-sidebar {
         height: 40px;
         padding: 0 20px;
         background-color: #fff; }
-        body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li a.has-dropdown:after {
+      body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li a.has-dropdown:after {
           content: "";
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
