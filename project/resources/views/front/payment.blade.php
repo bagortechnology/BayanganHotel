@@ -242,7 +242,7 @@ $client = 'ARw2VtkTvo3aT7DILgPWeSUPjMK_AS5RlMKkUmB78O8rFCJcfX6jFSmTDpgdV3bOFLG2W
 				transactions: [{
 					amount: {
 						total: '{{ $total_price }}',
-						currency: 'USD'
+						currency: 'PHP'
 					}
 				}]
 			});
