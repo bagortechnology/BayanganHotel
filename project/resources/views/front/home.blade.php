@@ -121,7 +121,7 @@
                             <i class="bx bx-bed"> {{ $item->total_beds }}</i>
                         </div>
                         <div class="price fw-bold lead">
-                         <i class="bx bx-money"> ₱{{ $item->price }}/day</i>   
+                            <i class="bx bx-money"> ₱{{ number_format($item->price, 2, '.', ',') }}/day</i>  
                         </div>
                         <div class="button">
                             <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white">See Detail</a>
