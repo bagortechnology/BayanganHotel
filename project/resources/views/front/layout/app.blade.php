@@ -232,146 +232,88 @@
         @yield('main_content')
 
 
-        <footer>
+       
 
-            <div class="footer py-0">
-            <div class="position-relative overflow-hidden">
-                <div class="row" style="">
-                    <div class="col-md-6 col-lg-3 py-5 d-flex justify-content-center align-items-center">
-                        <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
-                            <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="150px" height="180px">
-                            <h2 class="text-center">Bayangan Hotel and Beach Resort</h2>
+<footer>
+        <section class="footer relative overflow-hidden">
+            <div class="footer_content">
+                <div class="row">
+                    <div class="col col-lg-4" style="padding: 5rem 0; background: #FEFAE0;">
+                        <div class="p-5 d-flex flex-column gap-3 text-center justify-content-center align-items-center">
+                            <div class="logo d-flex flex-column">
+                                <a href="/index.php" class="logo">
+                                    <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="140" height="150">
+                                </a>
+                                <span>Bayangan hotel</span>
+                            </div>
+                           
+
+                            <div class="foot">
+                                <p class="d-none d-md-flex">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
-                        <div class="item  container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Useful Links</h2>
-                            <ul class="useful-links">
-                                <li><a href="{{ route('home') }}">Home</a></li>
-
-                                @if($global_page_data->terms_status == 1)
-                                <li><a href="{{ route('terms') }}">{{ $global_page_data->terms_heading }}</a></li>
-                                @endif
+                    <div class=" col-md-12 col-lg-8" style="padding: 5rem 0; background: #1A5F7A;">
+                        <div class="row px-5">
+                            <div class="col-md-6 p-0">
+                                <ul class="list-unstyled plan d-flex justify-content-center flex-column gap-2">
+                                    <h4 class="plan_footer" style="border-left: 5px solid #E38B29; color:#FEFAE0; padding-left: .8rem;">PLAN YOUR VISIT</h4>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Getting here</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Visitor services</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">About</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Contact us</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Careers</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">FAQ</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Terms of use</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link" style="color:#FEFAE0;">Privacy notice</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 p-0 mt-4 mt-md-0">
+                                <div class="d-flex flex-column gap-4">
+                                    <ul class="list-unstyled">
+                                        <h4 class="hotel_footer" style="border-left: 5px solid #E38B29; color:#FEFAE0; padding-left: .8rem;">HOTEL RESERVATIONS</h4>
+                                        <li class="nav-item d-flex gap-2">
+                                            
+                                            <span class="text-white"">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; padding-right: .4rem" class="ionicon" viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                                1111-222-333</span>
+                                        </li>
+                                        <li class="nav-item d-flex gap-2">
+                                            
+                                            <span class="text-white">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; padding-right: .4rem" class="ionicon" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                                                bayangan@example.com</span>
+                                        </li>
+                                    </ul>
+                                    <div class="subscribe input-group">
+                                        <form action="{{ route('subscriber_send_email') }}" method="post" class="form_subscribe_ajax">
+                                        @csrf
+                                        <div class="input-group">
+                                            <span class="text-danger error-text email_error"></span>
+                                            <input type="text" name="email" class="border-0 py-2" style="padding-left: .4rem" placeholder="email">
+                                            <input type="submit" class="border-0 py-2" value="Subscribe Now" style="background-color: #E38B29; color: #FEFAE0">
+                                        </div>
                                 
-                                @if($global_page_data->privacy_status == 1)
-                                <li><a href="{{ route('privacy') }}">{{ $global_page_data->privacy_heading }}</a></li>
-                                @endif
-
-                                @if($global_page_data->faq_status == 1)
-                                <li><a href="{{ route('faq') }}">{{ $global_page_data->faq_heading }}</a></li>
-                                @endif
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
-                        <div class="item  container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Contact</h2>
-                            <div class="list-item">
-                                <div class="left">
-                                    <i class="fa fa-map-marker"></i>
-                                </div>
-                                <div class="right">
-                                    {!! nl2br($global_setting_data->footer_address) !!}
-                                </div>
-                            </div>
-                            <div class="list-item">
-                                <div class="left">
-                                    <i class="fa fa-volume-control-phone"></i>
-                                </div>
-                                <div class="right">
-                                    {{ $global_setting_data->footer_phone }}
-                                </div>
-                            </div>
-                            <div class="list-item">
-                                <div class="left">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <div class="right">
-                                    {{ $global_setting_data->footer_email }}
-                                </div>
-                            </div>
-                            <ul class="social">
-
-                                @if($global_setting_data->facebook != '')
-                                <li><a href="{{ $global_setting_data->facebook }}"><i class="fa fa-facebook-f"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->twitter != '')
-                                <li><a href="{{ $global_setting_data->twitter }}"><i class="fa fa-twitter"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->linkedin != '')
-                                <li><a href="{{ $global_setting_data->linkedin }}"><i class="fa fa-linkedin"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->pinterest != '')
-                                <li><a href="{{ $global_setting_data->pinterest }}"><i class="fa fa-pinterest-p"></i></a></li>
-                                @endif
-                                
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
-                        <div class="item container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Newsletter</h2>
-                            <p>
-                                In order to get the latest news and other great items, please subscribe us here: 
-                            </p>
-                            <form action="{{ route('subscriber_send_email') }}" method="post" class="form_subscribe_ajax">
-                                @csrf
-                                <div class="form-group">
-                                    <input type="text" name="email" class="form-control">
-                                    <span class="text-danger error-text email_error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29">
-                                </div>
-                                <div class="mt-4">
-                                    <p>*By subscribing, you agree to receive marketing email messages from 
-                                        Bayangan Hotel and Beach Resort at the email address provided. Unsubscribe
-                                         at any time. View our Privacy Policy and Terms of Services</p>
-                                </div>
                             </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="subscribing-info col-lg-8 mt-4" style="font-size:10px; letter-spacing:0.15em">*By subscribing, you agree to receive marketing email messages from Bayangan Hotel 
+                                    and Beach Resort at the email address provided. Unsubscribe at any time. View our 
+                                    Privacy Policy and Terms of Services</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="d-md-none" style="font-size: 12px; color: #bebcbc;">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-</footer>
+        </section>
+    </footer>
 
-        <div class="copyright">
-            {{ $global_setting_data->copyright }}
-        </div>
-     
-        <div class="scroll-top">
-            <i class="fa fa-angle-up"></i>
-        </div>
-		
-        @include('front.layout.scripts_footer')
-
-        @if(session()->get('error'))
-            <script>
-                iziToast.error({
-                    title: '',
-                    position: 'topRight',
-                    message: '{{ session()->get('error') }}',
-                });
-            </script>
-        @endif
-
-        @if(session()->get('success'))
-            <script>
-                iziToast.success({
-                    title: '',
-                    position: 'topRight',
-                    message: '{{ session()->get('success') }}',
-                });
-            </script>
-        @endif
+    
 
         <script>
             (function($){

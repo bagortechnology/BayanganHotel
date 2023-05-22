@@ -269,44 +269,26 @@
     </main>
 
     <footer>
-
         <section class="footer relative overflow-hidden">
             <div class="footer_content">
                 <div class="row">
-                    <div class="col-lg-4 left_content" style="padding: 5rem 0">
+                    <div class="col col-lg-4" style="padding: 5rem 0; background: #FEFAE0;">
                         <div class="p-5 d-flex flex-column gap-3 text-center justify-content-center align-items-center">
                             <div class="logo">
                                 <a href="/index.php" class="logo">
                                     <img src="../assets/Bayangan Hotel Logo.png" alt="" width="140" height="150">
                                 </a>
                             </div>
-                            <?php
-                                if($settings_r['site_about'] != ''){
-                                    echo <<<data
-                                        <h1>$settings_r[site_about]</h1>
-                                    data;
-                                }
-                            ?>
-                            <!-- <div class="social_links">
-
-                            </div> -->
-                        
-                            <?php
-                                if($contact_r['address'] != ''){
-                                    echo <<<data
-                                        <p style="font-size:20px">$contact_r[address]<p>
-                                    data;
-                                }
-                            ?>
+                           
 
                             <div class="foot">
-                                <p>© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
+                                <p class="d-none d-md-flex">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-8 p-0 right_content" style="padding: 5rem 0">
-                        <div class="row d-flex flex-column flex-md-row container gap-4 gap-lg-0 py-5 h-100">
-                            <div class="col d-flex justify-content-start px-5 h-100">
+                    <div class=" col-md-12 col-lg-8" style="padding: 5rem 0; background: #1A5F7A;">
+                        <div class="row px-5">
+                            <div class="col-md-6 p-0">
                                 <ul class="list-unstyled plan d-flex justify-content-center flex-column gap-2">
                                     <h4 class="plan_footer">PLAN YOUR VISIT</h4>
                                     <li class="nav-item"><a href="#" class="nav-link">Getting here</a></li>
@@ -319,29 +301,36 @@
                                     <li class="nav-item"><a href="#" class="nav-link">Privacy notice</a></li>
                                 </ul>
                             </div>
-                            <div class="col hotelReserve d-flex justify-content-center align-items-start gap-4 flex-column px-5 h-100 ">
+                            <div class="col-md-6 p-0 mt-4 mt-md-0">
                                 <div class="d-flex flex-column gap-4">
                                     <ul class="list-unstyled">
                                         <h4 class="hotel_footer">HOTEL RESERVATIONS</h4>
                                         <li class="nav-item d-flex gap-2">
-                                            <img src="../assets/telephone-fill.svg" alt="telephone_graphic">
-                                            <a href="#" class="nav-link ps-4">1111-222-333</a>
+                                            
+                                            <span class="text-white"">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; padding-right: .4rem" class="ionicon" viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                                1111-222-333</span>
                                         </li>
                                         <li class="nav-item d-flex gap-2">
-                                            <img src="../assets/envelope-fill.svg" alt="envelope_graphic">
-                                            <a href="#" class="nav-link ps-4">bayangan@example.com</a>
+                                            
+                                            <span class="text-white">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; padding-right: .4rem" class="ionicon" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                                                bayangan@example.com</span>
                                         </li>
                                     </ul>
                                     <div class="subscribe input-group">
                                         <input type="email" placeholder="Email Address" id="email" name="email-footer" class="form-control border-0 px-2 rounded-0">
-                                        <button class="btn btn_subscribe rounded-0">SUBSCRIBE</button>
+                                        <button class="btn btn_subscribe rounded-0" style="background: #E38B29;">SUBSCRIBE</button>
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="subscribing-info col-lg-8" style="font-size:10px; letter-spacing:0.15em">*By subscribing, you agree to receive marketing email messages from Bayangan Hotel 
+                                    <p class="subscribing-info col-lg-8 mt-4" style="font-size:10px; letter-spacing:0.15em">*By subscribing, you agree to receive marketing email messages from Bayangan Hotel 
                                     and Beach Resort at the email address provided. Unsubscribe at any time. View our 
                                     Privacy Policy and Terms of Services</p>
                                 </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="d-md-none" style="font-size: 12px; color: #bebcbc;">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
                             </div>
                         </div>
                     </div>
