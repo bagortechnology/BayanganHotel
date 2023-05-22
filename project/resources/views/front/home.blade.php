@@ -120,7 +120,7 @@
                         <div class="bed">
                             <i class="bx bx-bed"> {{ $item->total_beds }}</i>
                         </div>
-                        <div class="price">
+                        <div class="price fw-bold lead">
                          <i class="bx bx-money"> ₱{{ $item->price }}/day</i>   
                         </div>
                         <div class="button">
