@@ -6,8 +6,8 @@
 <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
-            <div class="card-icon bg-primary">
-                <i class="fa fa-cart-plus"></i>
+            <div class="card-icon bg-success">
+                <i class="bx bx-receipt bx-burst-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">
@@ -22,7 +22,7 @@
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
             <div class="card-icon bg-danger">
-                <i class="fa fa-shopping-cart"></i>
+                <i class="bx bx-calendar-exclamation bx-tada-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">
@@ -37,7 +37,7 @@
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
             <div class="card-icon bg-warning">
-                <i class="fa fa-user-plus"></i>
+                <i class="bx bx-user-voice bx-burst-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">
@@ -51,8 +51,8 @@
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
-            <div class="card-icon bg-success">
-                <i class="fa fa-user"></i>
+            <div class="card-icon bg-danger">
+                <i class="bx bx-sleepy bx-tada-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">
@@ -66,8 +66,8 @@
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
-            <div class="card-icon bg-primary">
-                <i class="fa fa-home"></i>
+            <div class="card-icon bg-warning">
+                <i class="bx bx-bed bx-tada-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">
@@ -81,8 +81,8 @@
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
-            <div class="card-icon bg-danger">
-                <i class="fa fa-users"></i>
+            <div class="card-icon bg-success">
+                <i class="bx bx-envelope bx-tada-hover"></i>
             </div>
             <div class="card-wrap">
                 <div class="card-header">

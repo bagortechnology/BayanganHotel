@@ -15,7 +15,11 @@
 
             <li class="{{ Request::is('admin/edit-profile') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_profile') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Edit Profile"><i class="bx bx-user-plus bx-tada-hover"></i> <span>Edit Profile</span></a></li>
 
-            <li class="{{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ route('home') }}" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="View Website"><i class="bx bx-link-alt bx-tada-hover"></i> <span>View Website</span></a></li>
+            <li class="{{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ route('home') }}" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="View Website"><i class="fa fa-eye"></i> <span>View Website</span></a></li>
+
+            <li class="{{ Request::is('admin/customers') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_customer') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Customers"><i class="bx bxs-user-rectangle bx-tada-hover"></i> <span>Customers</span></a></li>
+
+            <li class="{{ Request::is('admin/order/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_orders') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Bookings"><i class="bx bxs-book bx-tada-hover"></i> <span>Bookings</span></a></li>
 
             <li class="nav-item dropdown {{ Request::is('admin/amenity/view')||Request::is('admin/room/view') ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="bx bx-hotel bx-tada-hover"></i><span>Room Section</span></a>
@@ -77,25 +81,36 @@
                 </ul>
             </li>
 
-            <li class="{{ Request::is('admin/customers') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_customer') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Customers"><i class="bx bxs-user-rectangle bx-tada-hover"></i> <span>Customers</span></a></li>
+            <li class="nav-item dropdown {{ Request::is('admin/photo/*')||Request::is('admin/video/*') ? 'active' : '' }}">
+                <a href="#" class="nav-link has-dropdown"><i class="bx bx-camera-home bx-tada-hover"></i><span>Gallery</span></a>
+                <ul class="dropdown-menu">
 
-            <li class="{{ Request::is('admin/order/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_orders') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Bookings"><i class="bx bxs-book bx-tada-hover"></i> <span>Bookings</span></a></li>
+                    <li class="{{ Request::is('admin/photo/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_photo_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Photo Gallery"><i class="fa fa-angle-right"></i> <span>Photos</span></a></li>
 
+                     <li class="{{ Request::is('admin/video/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_video_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Video Gallery"><i class="fa fa-angle-right"></i> <span>Videos</span></a></li>
+                </ul>
+            </li>
 
+            <li class="nav-item dropdown {{ Request::is('admin/slide/*')||Request::is('admin/feature/*')||Request::is('admin/testimonial/*') ? 'active' : ''}}">
+                <a href="#" class="nav-link has-dropdown"><i class="bx bx-home-smile bx-tada-hover"></i><span>Home Section</span></a>
+                <ul class="dropdown-menu">
 
-            <li class="{{ Request::is('admin/slide/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_slide_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Slide"><i class="bx bx-slideshow bx-tada-hover"></i> <span>Slides</span></a></li>
+                    <li class="{{ Request::is('admin/slide/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_slide_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Slide"><i class="fa fa-angle-right"></i> <span>Slides</span></a></li>
 
-            <li class="{{ Request::is('admin/feature/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_feature_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Feature"><i class="bx bxs-compass bx-tada-hover"></i> <span>Features</span></a></li>
+                    <li class="{{ Request::is('admin/feature/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_feature_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Feature"><i class="fa fa-angle-right"></i> <span>Features</span></a></li>
+        
+                    <li class="{{ Request::is('admin/testimonial/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_testimonial_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Testimonial"><i class="fa fa-angle-right"></i> <span>Testimonials</span></a></li>
+                </ul>
+            </li>
 
-            <li class="{{ Request::is('admin/testimonial/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_testimonial_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Testimonial"><i class="bx bx-star bx-tada-hover"></i> <span>Testimonials</span></a></li>
 
             <li class="{{ Request::is('admin/post/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_post_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Post"><i class="bx bxs-pencil bx-tada-hover"></i> <span>Articles</span></a></li>
-
-            <li class="{{ Request::is('admin/photo/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_photo_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Photo Gallery"><i class="bx bx-image"></i> <span>Photos</span></a></li>
-
-            <li class="{{ Request::is('admin/video/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_video_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Video Gallery"><i class="bx bx-video"></i> <span>Videos</span></a></li>
-
             <li class="{{ Request::is('admin/faq/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_faq_view') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="FAQ"><i class="bx bx-question-mark bx-tada-hover"></i> <span>FAQ</span></a></li>
+            <li class="{{ Request::is('admin/logout') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_logout') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Logout"><i class="bx bx-log-out bx-rotate-180" style="color: #ff0000"></i> <span>Logout</span></a></li>
+
+
+
+
 
 
             
