@@ -93,8 +93,8 @@
                             data-amount="{{ $cents }}"
                             data-name="{{ env('APP_NAME') }}"
                             data-description=""
-                            data-image="{{ asset('stripe.png') }}"
-                            data-currency="usd"
+                            data-image="{{ asset('uploads/'.$global_setting_data->favicon) }}"
+                            data-currency="php"
                             data-email="{{ $customer_email }}"
                         >
                         </script>
