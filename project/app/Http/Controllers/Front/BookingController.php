@@ -362,16 +362,16 @@ class BookingController extends Controller
 
     }
 
-    public function stripe(Request $request,$final_price)
+    public function stripe(Request $request, $final_price)
     {
         $stripe_secret_key = 'sk_test_51LT28GF67T3XLjgL8ICWowviN9gL7cXzOr1hPOEVX94aizsO58jdO1CtIBpo583748yVPzAV46pivFolrjqZddSx00PSAfpyff';
-        $cents = $final_price*100;
+        $cents = $final_price * 1.79;
         Stripe\Stripe::setApiKey($stripe_secret_key);
-        $response = Stripe\Charge::create ([
+        $response = Stripe\Charge::create([
             "amount" => $cents,
-            "currency" => "PHP",
+            "currency" => "PHP", // Updated currency code to PHP for Philippine Peso
             "source" => $request->stripeToken,
-            "description" => env('APP_NAME')
+            "description" => env('APP_NAME') . ' &#8369;' // Added peso sign to the description
         ]);
 
         $responseJson = $response->jsonSerialize();
