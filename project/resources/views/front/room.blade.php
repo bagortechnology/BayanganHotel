@@ -19,18 +19,24 @@
             <div class="col-md-4 mb-3">
                 <img src="{{ asset('uploads/' .$item->featured_photo) }}" class="img-fluid" alt="Room Image">
               </div>
-              <div class="col-md-4">
-                <h3><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h3>
-                <ul>
-                  <li><i class="bi bi-bed"></i> Queen Size Bed</li>
-                  <li><i class="bi bi-bed"></i> Twin Beds</li>
-                </ul>
+              <div class="col-md-4 room-name mb-2">
+                <h3 class="lead" style="color: #"><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h3>
+                <div class="small"></div>
+                <div class="room-size">
+                    <i class="bx bx-area"> {{ $item->size }}</i>
+                </div>
+                <div class="room-guest mb-2">
+                    <i class="bx bx-group"> Good for {{ $item->total_guests }}  people</i>
+                </div>
+                <div class="bed mb-2">
+                    <i class="bx bx-bed"> {{ $item->total_beds }}</i>
+                </div>
+                <div class="small">Includes amenities afforded to lower room types.</div>
               </div>
               <div class="col-md-4">
                 <h4>Price Details</h4>
                 <p>Starting from $200 per night</p>
-                <a href="#" class="btn btn-primary">Book Now</a>
-                <a href="#" class="btn btn-secondary">Learn More</a>
+                <a href="{{ route('room_detail' ,$item->id) }}" class="btn btn-primary">SELECT ROOM</a>
               </div>
             </div>
         @endforeach
