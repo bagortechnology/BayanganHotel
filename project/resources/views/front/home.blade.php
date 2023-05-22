@@ -104,7 +104,7 @@
             @if($loop->iteration>$global_setting_data->home_room_total) 
             @break
             @endif
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="inner">
                     <div class="photo">
                         <img src="{{ asset('uploads/'.$item->featured_photo) }}" alt="resort featured image" class="img-fluid rounded-top-2">
