@@ -111,8 +111,17 @@
                     </div>
                     <div class="text">
                         <h2><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
+                        <div class="room-size">
+                            <i class="bx bx-area"> {{ $item->size }}</i>
+                        </div>
+                        <div class="room-guest">
+                            <i class="bx bx-group"> Good for {{ $item->total_guests }}  people</i>
+                        </div>
+                        <div class="bed">
+                            <i class="bx bx-bed">{{ $item->total_beds }}</i>
+                        </div>
                         <div class="price">
-                            ₱{{ $item->price }}/day
+                         <i class="bx bx-money"> ₱{{ $item->price }}/day</i>   
                         </div>
                         <div class="button">
                             <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white">See Detail</a>
