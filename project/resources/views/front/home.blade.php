@@ -118,7 +118,7 @@
                             <i class="bx bx-group"> Good for {{ $item->total_guests }}  people</i>
                         </div>
                         <div class="bed">
-                            <i class="bx bx-bed">{{ $item->total_beds }}</i>
+                            <i class="bx bx-bed"> {{ $item->total_beds }}</i>
                         </div>
                         <div class="price">
                          <i class="bx bx-money"> ₱{{ $item->price }}/day</i>   
