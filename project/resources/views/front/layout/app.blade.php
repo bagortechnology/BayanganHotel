@@ -310,6 +310,7 @@
         <p class="m-0 py-2 w-100 text-center" style="font-size: 12px;background-color: #406b7c; color: #ffffff ">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
     </div>
     
+    
 
         <script>
             (function($){
