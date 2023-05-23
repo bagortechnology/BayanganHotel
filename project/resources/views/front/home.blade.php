@@ -269,10 +269,10 @@
                 <h1 class="text-md-start">See Zamboanga del Norte</h1>
             </div>
             <div>
-                <p class="text-md-start w-75">Labason, Zamboanga del Norte is a hidden gem waiting to be 
-                    discovered by tourists. With its breathtaking beaches, lush forests, and rich cultural
-                     heritage, Labason offers a unique and authentic experience for those seeking an adventure
-                      off the beaten path.</p>
+                <p class="text-md-start w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis
+                    asperiores, delectus accusamus aut esse consectetur nisi, debitis quibusdam,
+                    laborum unde atque excepturi maxime. Laboriosam, illum quia culpa quasi
+                    doloremque iusto aperiam placeat omnis, obcaecati quae, fuga labore rem veniam?</p>
                     <button class="btn btn__explore rounded-0 text-white" style="background-color: #E38B29">Explore</button>
             </div>
             

@@ -35,7 +35,7 @@
                             <span class="text-danger error-text message_error"></span>
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn contact" style="background-color: #E38B29; color: #FEFAE0">Send Message</button>
+                            <button type="submit" class="btn btn-primary bg-website">Send Message</button>
                         </div>
                     </div>
                 </form>
