@@ -16,12 +16,12 @@
     <div class="container my-3">
         @foreach($room_all as $item)
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 mb-3 mx-lg-0">
                 <img src="{{ asset('uploads/' .$item->featured_photo) }}" class="img-fluid" alt="Room Image">
               </div>
               <div class="col-md-4 room-name mb-2">
-                <h3 class="lead" style="color: #"><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h3>
-                <div class="small"></div>
+                <h3 class="lead fs-4 fw-bold"><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h3>
+                <div class="small fs-5">
                 <div class="room-size">
                     <i class="bx bx-area"> {{ $item->size }}</i>
                 </div>
@@ -31,6 +31,7 @@
                 <div class="bed mb-2">
                     <i class="bx bx-bed"> {{ $item->total_beds }}</i>
                 </div>
+               </div>
                 <div class="small">Includes amenities afforded to lower room types.</div>
               </div>
               <div class="col-md-4">
@@ -41,29 +42,5 @@
             </div>
         @endforeach
         </div>
-            {{-- @foreach($room_all as $item)
-            <div class="col-md-3">
-                <div class="inner">
-                    <div class="photo">
-                        <img src="{{ asset('uploads/'.$item->featured_photo) }}" alt="">
-                    </div>
-                    <div class="text">
-                        <h2><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
-                        <div class="price">
-                            ₱{{ $item->price }}/day
-                        </div>
-                        <div class="button">
-                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary">See Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach --}}
-
-            {{-- <div class="col-md-12">
-                {{ $room_all->links() }}
-            </div> --}}
-
-
 </div>
 @endsection
