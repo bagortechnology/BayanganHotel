@@ -14,8 +14,8 @@
 
 <div class="page-content">
     <div class="container">
-        <div class="row justify-content-center py-5">
-            <div class="col col-md-4">
+        <div class="row justify-content-center">
+            <div class="col-4">
                 <form action="{{ route('customer_signup_submit') }}" method="post">
                     @csrf
                     <div class="login-form">
@@ -47,11 +47,11 @@
                                 <span class="text-danger">{{ $errors->first('retype_password') }}</span>
                             @endif
                         </div>
-                        <div class="mb-3 d-flex gap-4">
-                            <button type="submit" class="btn btn-primary bg-website w-100">Submit</button>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary bg-website">Submit</button>
                         </div>
-                        <div class="mb-3 d-flex justify-content-end align-items-center">
-                            <a href="{{ route('customer_login') }}" class="primary-color" style="text-decoration: underline">Login Now?</a>
+                        <div class="mb-3">
+                            <a href="{{ route('customer_login') }}" class="primary-color">Existing User? Login Now</a>
                         </div>
                     </div>
                 </form>

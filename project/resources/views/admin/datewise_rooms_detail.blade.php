@@ -3,7 +3,7 @@
 @section('heading', 'Rooms (Booked and Available) for '.$selected_date)
 
 @section('right_top_button')
-<a href="{{ route('admin_datewise_rooms') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Back to previous</a>
+<a href="{{ route('admin_datewise_rooms') }}" class="btn btn-primary"><i class="bx bx-chevron-left-circle"></i>  Back to previous</a>
 @endsection
 
 @section('main_content')
@@ -16,7 +16,7 @@
                         <table class="table table-bordered" id="">
                             <thead>
                                 <tr>
-                                    <th>SL</th>
+                                    <th>ID</th>
                                     <th>Room Name</th>
                                     <th>Total Rooms</th>
                                     <th>Booked Rooms</th>
@@ -34,12 +34,12 @@
                                     <td>{{ $row->total_rooms }}</td>
                                     <td>
                                         @php
-                                        $cnt = \App\Models\BookedRoom::where('room_id',$row->id)->where('booking_date',$selected_date)->count();
+                                        $Occupied = \App\Models\BookedRoom::where('room_id',$row->id)->where('booking_date',$selected_date)->count();
                                         @endphp
-                                        {{ $cnt }}
+                                        {{ $Occupied }}
                                     </td>
                                     <td>
-                                        {{ $row->total_rooms-$cnt }}
+                                        {{ $row->total_rooms-$Occupied }}
                                     </td>
                                 </tr>
                                 @endforeach

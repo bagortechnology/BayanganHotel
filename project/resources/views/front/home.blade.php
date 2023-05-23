@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <button type="submit" class="btn btn-primary">Book Now</button>
+                        <a href=""><button type="submit" class="btn btn-primary">Search</button></a>
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@
 @endif
 
 
-<section class="rooms" style="background: linear-gradient(to right,#FEFAE0,transparent),url('./uploads/DR_2.jpg');">
+{{-- <section class="rooms" style="background: linear-gradient(to right,#FEFAE0,transparent),url('./uploads/DR_2.jpg');">
     <div class="container">
         <div class="rooms-content d-flex flex-column justify-content-center gap-4">
             <div class="title col-lg-3" style="border-left: 6px solid #E38B29; padding-left: .6rem; color:#1A5F7A">
@@ -198,7 +198,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 @if($global_setting_data->home_latest_post_status == 'Show')
@@ -261,7 +261,7 @@
     </div>
 </section>
 
-<section class="location" style="background-color: #FEFAE0; color: #1A5F7A">
+{{-- <section class="location" style="background-color: #FEFAE0; color: #1A5F7A">
     <div class="container">
         <div class="location_content d-flex flex-column justify-content-center gap-4" style="min-height: 100vh">
             <div class="title" style="border-left: 6px solid #E38B29; padding-left: .6rem">
@@ -269,38 +269,37 @@
                 <h1 class="text-md-start">See Zamboanga del Norte</h1>
             </div>
             <div>
-                <p class="text-md-start w-75">Labason, Zamboanga del Norte is a hidden gem waiting to be 
-                    discovered by tourists. With its breathtaking beaches, lush forests, and rich cultural
-                     heritage, Labason offers a unique and authentic experience for those seeking an adventure
-                      off the beaten path.</p>
+                <p class="text-md-start w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis
+                    asperiores, delectus accusamus aut esse consectetur nisi, debitis quibusdam,
+                    laborum unde atque excepturi maxime. Laboriosam, illum quia culpa quasi
+                    doloremque iusto aperiam placeat omnis, obcaecati quae, fuga labore rem veniam?</p>
                     <button class="btn btn__explore rounded-0 text-white" style="background-color: #E38B29">Explore</button>
             </div>
             
         </div>
     </div>
-</section>
+</section> --}}
 
 <div class="overflow-hidden">
         <div class="row d-flex flex-wrap gallery__content">
             <div class="col-6 col-md overflow-hidden p-0 ">
-                <img src="./uploads/hero_sec.jpg" alt="" class="w-100 h-100">
+                <img src="{{ asset('uploads/hero_sec.jpg') }}" alt="" class="w-100 h-100">
             </div>
             <div class="col-6 col-md overflow-hidden d-flex justify-content-center align-items-center p-0 2nd_col" style="background-color: #FEFAE0; color:#1A5F7A">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="title" style="letter-spacing:0.15em; font-size:20px">GALLERY</div>
-                    <h1>Catch a Glimpse</h1>
-                    <button class="btn btn__seemore rounded-0 text-white" style="background-color: #E38B29">SEE MORE</button>
+                    <h2 class="lead fs-2 fw-bold px-3">Catch a Glimpse</h2>
+                    <a href="{{ route('photo_gallery') }}"><button class="btn btn-seemore rounded text-white btn-lg" style="background-color: #E38B29">SEE MORE</button></a>
                 </div>
             </div>
             <div class="col-6 col-md overflow-hidden p-0 ">
-                <img src="./uploads/diving.jpg" alt="" class="w-100 h-100">
+                <img src="{{ asset('uploads/diving.jpg') }}" alt="Diving" class="w-100 h-100">
             </div>
             <div class="col-6 col-md overflow-hidden p-0 ">
-                <img src="./uploads/dishImg.jpg" alt="" class="w-100 h-100">
+                <img src="{{ asset('uploads/dishImg.jpg') }}" alt="Cuisine" class="w-100 h-100">
             </div>
         </div>
-    </div>
-</section>
+</div>
 
 
 
@@ -315,6 +314,5 @@
         </script>
     @endforeach
 @endif
-
 
 @endsection

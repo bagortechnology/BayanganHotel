@@ -22,7 +22,7 @@
                         <img src="{{ asset('uploads/'.$item->featured_photo) }}" alt="resort featured image" class="img-fluid rounded-top-2">
                     </div>
                     <div class="text">
-                        <h2><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
+                        <h2 class="lead fs-2"><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
                         <div class="room-size">
                             <i class="bx bx-area"> {{ $item->size }}</i>
                         </div>
@@ -33,10 +33,10 @@
                             <i class="bx bx-bed"> {{ $item->total_beds }}</i>
                         </div>
                         <div class="price lead">
-                            <i class="bx bx-money"> ₱{{ number_format($item->price, 2, '.', ',') }}/day</i>  
+                            <i class="bx bx-money"> Price starts ₱{{ number_format($item->price, 2, '.', ',') }} per day</i>  
                         </div>
                         <div class="button">
-                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary text-white"><i class="fa fa-eye"></i> View Details</a>
+                            <a href="{{ route('room_detail',$item->id) }}" class="btn btn-primary"><i class="fa fa-eye"></i> View Details</a>
                         </div>
                     </div>
                 </div>
