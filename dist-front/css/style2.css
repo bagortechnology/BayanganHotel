@@ -585,7 +585,7 @@ select {
 
 
 /* Footer */
-.footer {
+/* .footer {
 	background: #363636;
 	color: #fff;
 	padding-top: 40px;
@@ -672,14 +672,14 @@ select {
 }
 
 /* Copyright */
-.copyright {
+/* .copyright {
 	background: #000;
 	color: #fff;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 	font-size: 14px;
-}
+}  */
 
 /* Page Top */
 .page-top {
