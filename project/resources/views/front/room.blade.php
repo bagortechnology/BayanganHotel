@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="home-rooms" style=" background-color: #FEFAE0">
+<div class="home-rooms" style="background-color: #E38B29">
     <div class="container">
         <div class="row">
             @foreach($room_all as $item)
