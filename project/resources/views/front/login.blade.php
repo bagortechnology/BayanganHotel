@@ -14,8 +14,8 @@
 
 <div class="page-content">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-4">
+        <div class="row justify-content-center py-5">
+            <div class="col col-md-4">
 
                 <form action="{{ route('customer_login_submit') }}" method="post">
                     @csrf
@@ -35,12 +35,12 @@
                             @endif
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary bg-website">Login</button>
-                            <a href="{{ route('customer_forget_password') }}" class="primary-color">Forget Password?</a>
+                            <button type="submit" class="btn btn-primary bg-website w-100">Login</button>
                         </div>
-                        <div class="mb-3">
-                            <a href="{{ route('customer_signup') }}" class="primary-color">New User? Make Registration</a>
+                        <div class="text-end">
+                            <a href="{{ route('customer_forget_password') }}" class="primary-color" style="text-decoration: underline">Forget Password?</a>
                         </div>
+                        
                     </div>
                 </form>
 
