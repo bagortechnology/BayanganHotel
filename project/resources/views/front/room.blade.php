@@ -1,6 +1,7 @@
 @extends('front.layout.app')
 
 @section('main_content')
+
 <div class="page-top">
     <div class="bg"></div>
     <div class="container">
@@ -15,6 +16,7 @@
 <div class="home-rooms" style="background-color: #E38B29">
     <div class="container">
         <div class="row">
+            @if(!empty($room_all))
             @foreach($room_all as $item)
             <div class="col-md-4">
                 <div class="inner">
@@ -23,6 +25,9 @@
                     </div>
                     <div class="text">
                         <h2 class="lead fs-2"><a href="{{ route('room_detail',$item->id) }}">{{ $item->name }}</a></h2>
+                        <div class="room-available">
+                            <i class="bx bx-hotel"> {{ $item->total_rooms }} Rooms Available</i>
+                        </div>
                         <div class="room-size">
                             <i class="bx bx-area"> {{ $item->size }}</i>
                         </div>
@@ -42,6 +47,7 @@
                 </div>
             </div>
             @endforeach
+            @endif
         </div>
     </div>
 </div>
