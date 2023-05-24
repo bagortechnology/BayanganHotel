@@ -288,8 +288,8 @@
             <div class="col-6 col-md overflow-hidden d-flex justify-content-center align-items-center p-0 2nd_col" style="background-color: #FEFAE0; color:#1A5F7A">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="title" style="letter-spacing:0.15em; font-size:20px">GALLERY</div>
-                    <h2 class="lead fs-2 fw-bold px-3">Catch a Glimpse</h2>
-                    <a href="{{ route('photo_gallery') }}"><button class="btn btn-seemore rounded text-white btn-lg" style="background-color: #E38B29">SEE MORE</button></a>
+                    <h2 class="lead fs-3 fw-bold px-3">Catch a Glimpse</h2>
+                    <a href="{{ route('photo_gallery') }}"><button class="btn btn-seemore rounded text-white" style="background-color: #E38B29">SEE MORE</button></a>
                 </div>
             </div>
             <div class="col-6 col-md overflow-hidden p-0 ">
