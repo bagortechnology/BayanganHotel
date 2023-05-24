@@ -34,12 +34,12 @@
                                     <td>{{ $row->total_rooms }}</td>
                                     <td>
                                         @php
-                                        $cnt = \App\Models\BookedRoom::where('room_id',$row->id)->where('booking_date',$selected_date)->count();
+                                        $Occuppied = \App\Models\BookedRoom::where('room_id',$row->id)->where('booking_date',$selected_date)->count();
                                         @endphp
-                                        {{ $cnt }}
+                                        {{ $Occupied }}
                                     </td>
                                     <td>
-                                        {{ $row->total_rooms-$cnt }}
+                                        {{ $row->total_rooms-$Occupied }}
                                     </td>
                                 </tr>
                                 @endforeach
