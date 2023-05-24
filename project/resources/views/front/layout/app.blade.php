@@ -340,38 +340,13 @@
 
                 </div>
             </div>
-        </div>
-</footer>
-
-        <div class="copyright">
-            {{ $global_setting_data->copyright }}
-        </div>
-     
-        <div class="scroll-top">
-            <i class="fa fa-angle-up"></i>
-        </div>
-		
-        @include('front.layout.scripts_footer')
-
-        @if(session()->get('error'))
-            <script>
-                iziToast.error({
-                    title: '',
-                    position: 'topRight',
-                    message: '{{ session()->get('error') }}',
-                });
-            </script>
-        @endif
-
-        @if(session()->get('success'))
-            <script>
-                iziToast.success({
-                    title: '',
-                    position: 'topRight',
-                    message: '{{ session()->get('success') }}',
-                });
-            </script>
-        @endif
+        </section>
+    </footer>
+    <div class="d-flex justify-content-center align-items-center">
+        <p class="m-0 py-2 w-100 text-center" style="font-size: 12px;background-color: #406b7c; color: #ffffff ">© 2023 Bayangan Hotel and Beach Resort. All rights Reserved.</p>
+    </div>
+    
+    
 
         <script>
             (function($){
