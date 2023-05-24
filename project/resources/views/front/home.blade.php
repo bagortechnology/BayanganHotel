@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <button type="submit" class="btn btn-primary">Book Now</button>
+                        <a href=""><button type="submit" class="btn btn-primary">Search</button></a>
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="title" style="letter-spacing:0.15em; font-size:20px">GALLERY</div>
                     <h2 class="lead fs-2 fw-bold px-3">Catch a Glimpse</h2>
-                    <a href="{{ route('photo_gallery') }}"><button class="btn btn__seemore rounded text-white btn-lg" style="background-color: #E38B29">SEE MORE</button></a>
+                    <a href="{{ route('photo_gallery') }}"><button class="btn btn-seemore rounded text-white btn-lg" style="background-color: #E38B29">SEE MORE</button></a>
                 </div>
             </div>
             <div class="col-6 col-md overflow-hidden p-0 ">
