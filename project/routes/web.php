@@ -102,7 +102,7 @@ Route::group(['middleware' =>['customer:customer']], function(){
 
 
 /**for searching */
-Route::get('/search', [RoomController::class, 'index'])->name('room');
+Route::get('/search', [RoomController::class, 'search'])->name('search');
 
 
 /* Admin - Middleware */

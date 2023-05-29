@@ -20,11 +20,11 @@ class RoomController extends Controller
         return view('front.room_detail', compact('single_room_data'));
     }
 
-    public function search($id)
+    public function search()
     {
         $search_text = $_GET['query'];
-        $room_all = Room::where('id','name','%'.$search_text.'%',$id)->get();
+        $single_room_data  = Room::where('name','%'.$search_text.'%')->get();
 
-        return view('front.home',compact('room_all'));
+        return view('front.room',compact('search_text'));
     }
 }
