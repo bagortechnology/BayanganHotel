@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
 @section('main_content')
-<div class="slider">
+{{-- <div class="slider">
     <div class="slide-carousel owl-carousel">
         @foreach($slide_all as $item)
         <div class="item" style="background-image:url({{ asset('uploads/'.$item->photo) }});">
@@ -20,44 +20,18 @@
         </div>
         @endforeach
     </div>
+</div> --}}
+<div class="relative" >
+    <img src="{{ asset('uploads/diving.jpg') }}" alt="Diving" class="w-100" style="height: 80vh">
 </div>
 
  
 <div class="search-section">
     <div class="container">
-        <form action="{{ route('cart_submit') }}" method="post">
-            @csrf
-            <div class="inner">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <select name="room_id" class="form-select">
-                                <option value="">Select Room</option>
-                                @foreach($room_all as $item)
-                                <option value="{{ $item->id }}">{{ $item->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <input type="text" name="checkin_checkout" class="form-control daterange1" placeholder="Checkin & Checkout">
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="form-group">
-                            <input type="number" name="adult" class="form-control" min="1" max="30" placeholder="Adults">
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="form-group">
-                            <input type="number" name="children" class="form-control" min="0" max="30" placeholder="Children">
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href=""><button type="submit" class="btn btn-primary">Search</button></a>
-                    </div>
-                </div>
+        <form class="form-inline" type="get" action="{{ url('/search') }}">
+            <div class="input-group">
+                <input class="form-control py" name="query" type="search" placeholder="Seach room..."/>
+                <button type="submit" class="text-white py">Search</button>
             </div>
         </form>
     </div>
