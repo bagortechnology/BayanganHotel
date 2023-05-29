@@ -105,6 +105,7 @@ Route::group(['middleware' =>['customer:customer']], function(){
 Route::get('/search', [RoomController::class, 'search'])->name('search');
 
 
+
 /* Admin - Middleware */
 Route::group(['middleware' =>['admin:admin']], function(){
     Route::get('/admin/edit-profile', [AdminProfileController::class, 'index'])->name('admin_profile');

@@ -44,9 +44,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-10">
-                        <div class="form-group">
-                            <input class="form-control" name="query" type="search" placeholder="Search room..."/>
-                        </div>
+                        <input class="form-control" name="query" type="search" placeholder="Seach room..."/>
                     </div>
                     <div class="col-lg-2">
                         <a href=""><button type="submit" class="btn btn-primary">Search</button></a>
