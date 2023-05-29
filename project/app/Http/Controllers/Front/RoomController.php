@@ -22,9 +22,11 @@ class RoomController extends Controller
 
     public function search()
     {
-        $search_text = $_GET['query'];
-        $single_room_data  = Room::where('name','%'.$search_text.'%')->get();
+        $searchText = $_GET['query'];
+        $room_all  = Room::with('rRoomPhoto')
+            ->where('name', 'like', '%' . $searchText . '%')
+            ->get();
 
-        return view('front.room',compact('search_text'));
+        return view('front.room',compact('room_all'));
     }
 }
