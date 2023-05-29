@@ -26,17 +26,6 @@
 </div>
 
  
-{{-- <div class="search-section">
-    <div class="container">
-        <form class="form-inline" type="get" action="{{ url('/search') }}">
-            <div class="input-group">
-                <input class="form-control py" name="query" type="search" placeholder="Seach room..."/>
-                <button type="submit" class="text-white py">Search</button>
-            </div>
-        </form>
-    </div>
-</div> --}}
-
 <div class="search-section">
     <div class="container">
         <form action="{{ url('/search') }}" type="get">
