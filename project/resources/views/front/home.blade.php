@@ -26,7 +26,7 @@
 </div>
 
  
-<div class="search-section">
+{{-- <div class="search-section">
     <div class="container">
         <form class="form-inline" type="get" action="{{ url('/search') }}">
             <div class="input-group">
@@ -35,8 +35,27 @@
             </div>
         </form>
     </div>
-</div>
+</div> --}}
 
+<div class="search-section">
+    <div class="container">
+        <form action="{{ url('/search') }}" type="get">
+            @csrf
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="form-group">
+                            <input class="form-control" name="query" type="search" placeholder="Search room..."/>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><button type="submit" class="btn btn-primary">Search</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 
 @if($global_setting_data->home_feature_status == 'Show')
